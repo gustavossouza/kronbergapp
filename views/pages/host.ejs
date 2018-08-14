@@ -11,13 +11,13 @@
 
 <body>
     <div id="credentials" style="display:none;" data="<%= credentials %>"></div>
-    <div id="main" class="main-container">
+    <div id="main" class="main-container" style="width:700px; height:500px;">
         <div id="videoContainer" class="video-container">
             <div id="hostDivider" class="hidden"></div>
         </div>
     </div>
     <div class="broadcast-controls-container">
-        <div class="rtmp-container">
+        <div class="rtmp-container" style="visibility:hidden">
             <span id="rtmpLabel">Want to stream to YouTube Live or Facebook Live? Add your RTMP Server URL and Stream Name:</span>
             <span class="hidden error" id="rtmpError">The entered RTMP server and/or stream name are not valid. Please check the url and try again.</span>
             <span id="rtmpActive" class="hidden active">Your RTMP stream is active!</span>
@@ -26,14 +26,14 @@
                 <input id="rtmpStream" type="text" placeholder="myStreamName">
             </div>
         </div>
-        <button id="startStop" class="btn-broadcast hidden">Start Broadcast</button>
+        <button id="startStop" class="btn-broadcast hidden">Iniciar Transmissão</button>
         <div id="urlContainer" class="url-container hidden">
             <div id="broadcastURL" class="opacity-0 no-show"></div>
             <div id="copyURL"class="copy-link" data-clipboard-target="#broadcastURL">
-                <span>Get sharable HLS link</span>
+                <span>Compartilhar link!</span>
             </div>
             <div id="copyNotice" class="tooltip copy opacity-0">
-                <span>Link copied to clipboard!</span>
+                <span>Copiar o link!</span>
                 <span class="triangle-down">▼</span>
             </div>
         </div>
